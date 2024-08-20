@@ -3,65 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu bản thân</title>
+    <title>Giới Thiệu Bản Thân</title>
     <link rel="stylesheet" href="banthan.css">
 </head>
 <body>
-    <div class="container">
-       
-        <nav class="menu">
-            <ul>
-                <li><a href="#gioithieu">Giới thiệu</a></li>
-                <li><a href="#kynang">Kỹ năng</a></li>
-                <li><a href="#sothich">Sở thích</a></li>
-                <li><a href="#uocmo">Ước mơ</a></li>
-                <li><a href="#lienhe">Liên hệ</a></li>
-            </ul>
-        </nav>
-        
+
+<header>
+    <h1>Giới Thiệu Bản Thân</h1>
+</header>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#kynang">Kỹ năng</a>
+    <a href="#sothich">Sở thích</a>
+    <a href="#uocmo">Ước mơ</a>
+</nav>
+
+<section id="gioithieu" class="content">
+    <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-1/444487671_1116668809662042_1360697439768082404_n.jpg?stp=c2.1.198.198a_dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFRcER-1e9tdW1bHSdGVQ-RTzU4CL7R5HpPNTgIvtHkevlls5lYwI74bCn1fX0tEAn_le0PgL2c-OjhJCFQZdcP&_nc_ohc=NdI2QseqW4oQ7kNvgEEgDrG&_nc_ht=scontent.fsgn19-1.fna&oh=00_AYCWR7Fnd8qDvfX5aNxV8y83VbEaUwDzk8jbRU9KcxvISQ&oe=66CA7E78" alt="Hình ảnh của bạn" class="profile-img">
+    <h2>Giới thiệu</h2>
+    <p>Em là Dương Đình Thịnh sinh ngày 15/11/2001. Quê quán Bạc Liêu, hiện tại em đang ở thành phố Hồ Chí Minh để học đại học. Em học trường đại học Nguyễn Tất Thành và là sinh viên năm thứ 4. </p>
+</section>
+
+<section id="kynang" class="content">
+    <h2>Kỹ năng</h2>
+    <p>Tôi có kỹ năng về lập trình, thiết kế web và phân tích dữ liệu.</p>
+</section>
+
+<section id="sothich" class="content">
+    <h2>Sở thích</h2>
+    <p>Em thích đọc sách, du lịch và tham gia các hoạt động ngoài trời.</p>
+</section>
+
+<section id="uocmo" class="content">
+    <h2>Ước mơ</h2>
+    <p>Ước mơ của em là được làm việc tại một công ty và khám phá nhiều quốc gia trên thế giới.</p>
+</section>
+
+
+<button class="btn-toggle" onclick="toggleContent()">Xem thêm</button>
+
+
+<section id="them" class="content hidden">
+    <h2>Thông tin liên hệ</h2>
+
     
-        <div class="profile">
-            <img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-1/444487671_1116668809662042_1360697439768082404_n.jpg?stp=c2.1.198.198a_dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFRcER-1e9tdW1bHSdGVQ-RTzU4CL7R5HpPNTgIvtHkevlls5lYwI74bCn1fX0tEAn_le0PgL2c-OjhJCFQZdcP&_nc_ohc=89XL_sSZ4g4Q7kNvgGuyoCr&_nc_ht=scontent.fsgn19-1.fna&oh=00_AYDsfWPPpLntXGLXV23eqTKhYr9ZR8jdBArX4FnJP6uv9Q&oe=66C8BC78" alt="Hình đại diện" class="avatar">
-            <h1>Dương Đình Thịnh</h1>
-        </div>
-        
-        <div class="about">
-            <section id="gioithieu">
-                <h2>Giới thiệu</h2>
-                <p>Em là Dương Đình Thịnh, sinh ngày 15/11/2001, quê quán Bạc Liêu. Hiện tại đang sống và học ở Sài Gòn. Em là sinh viên năm 4 trường Đại học Nguyễn Tất Thành.</p>
-            </section>
+    <ul>
+        <li>Số: 0856559117</li>
+        <li>Gmail: thinhduong1511@gmail.com</li>
+    </ul>
+</section>
 
-            <section id="kynang">
-                <h2>Kỹ năng</h2>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                </ul>
-            </section>
+<script src="script.js"></script>
 
-            <section id="sothich">
-                <h2>Sở thích</h2>
-                <ul>
-                    <li>Chơi game</li>
-                    <li>Đọc sách về công nghệ</li>
-                    <li>Chụp ảnh</li>
-                    <li>Du lịch và khám phá thiên nhiên</li>
-                </ul>
-            </section>
-
-            <section id="uocmo">
-                <h2>Ước mơ</h2>
-                <p>Ước mơ của em là có thể tìm được công việc mà em yêu thích và phát triển nó để có thể có cuộc sống tốt đẹp, và em cũng mong muốn được đi khám phá mọi nơi trên thế giới.</p>
-            </section>
-
-            <section id="lienhe">
-                <h2>Liên hệ</h2>
-                <p>Email: thinhduong151101@gmail.com</p>
-                <p>Điện thoại: 190000 7784</p>
-            </section>
-        </div>
-    </div>
 </body>
 </html>
