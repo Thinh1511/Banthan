@@ -1,87 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1bcd30;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 0;
+    color: #333;
 }
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #fff;
+header {
+    background-color: #0073e6;
+    color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    text-align: center;
 }
-
-/* Menu */
-.menu {
-    background-color: #392cca;
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5;
     padding: 10px 0;
-    margin-bottom: 20px;
 }
-
-.menu ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.menu ul li a {
-    color: #fff;
+nav a {
+    color: white;
+    padding: 14px 20px;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-.menu ul li a:hover {
-    background-color: #115408e3;
-    border-radius: 4px;
-}
-
-.profile {
     text-align: center;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #003d80;
+}
+.content {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
-
-.avatar {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+.hidden {
+    display: none; 
 }
-
-h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #333;
+.btn-toggle {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.about h2 {
-    color: #333;
-    border-bottom: 2px solid #097726;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 5px;
+.btn-toggle:hover {
+    background-color: #005bb5;
 }
